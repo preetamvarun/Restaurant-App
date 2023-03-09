@@ -9,9 +9,18 @@
 .Navigator {
   display: flex;
   flex-direction: row;
-  background-color: violet;
+  background-color: #f5efef;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.Navigator .image-logo {
+  height: 75px;
+  width: 100%;
+}
+
+.Navigator .image-logo img {
+  height: 100%;
 }
 
 .Navigator ul {
@@ -24,22 +33,14 @@
   padding: 0rem 0.75rem;
 }
 
-.Navigator input {
-  padding: 0.45rem 0.85rem;
-  border: none;
+.Navigator ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
 }
 
-.Navigator .input-box {
-  background-color: white;
-}
-
-.Navigator .input-box i {
-  font-size: 0.8rem;
-  margin-left: 0.75rem;
-}
-
-.Navigator input:focus {
-  outline: none;
+.Nav-Links {
+  flex: 2;
 }
 
 .Navigator .cart-icon {

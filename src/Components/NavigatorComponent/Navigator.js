@@ -1,42 +1,36 @@
-import { useState } from 'react';
-import logo from '../NavigatorComponent/logo-full.png';
+import logo from '../NavigatorComponent/chef.png';
 import './Navigator.css';
 
 const Navigator = () => {
-  const [searchProduct, setSearchProduct] = useState('');
-  const handleOnChange = (evt) => {
-    setSearchProduct(evt.target.value);
-  };
   return (
     <div className='Navigator'>
       {/*Logo*/}
-      <div className='image-logo'>
-        <img src={logo} alt='eye-lens-logo' />
+      <div className='image-logo' style={{ flex: 1 }}>
+        <a href='/'>
+          <img src={logo} alt='eye-lens-logo' />
+        </a>
       </div>
 
       {/*List Items in the navigator*/}
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Featured</li>
-          <li>Recommended</li>
+      <div className='Nav-Links' style={{ flex: 2 }}>
+        <ul style={{ display: 'flex', justifyContent: 'center' }}>
+          <li>
+            <a href='/'>Home</a>
+          </li>
+          <li>
+            <a href='/'>Offers</a>
+          </li>
+          <li>
+            <a href='/'>About</a>
+          </li>
+          <li>
+            <a href='/'>Help</a>
+          </li>
         </ul>
       </div>
 
-      {/*Input box for user to search Items*/}
-      <div className='input-box'>
-        <i class='fa-solid fa-magnifying-glass'></i>
-        <input
-          type='text'
-          value={searchProduct}
-          onChange={handleOnChange}
-          placeholder='search product here'
-        />
-      </div>
-
       {/*Cart Icon*/}
-      <div className='cart-icon'>
+      <div className='cart-icon' style={{ flex: 1 }}>
         <i class='fa-solid fa-cart-shopping'></i>
       </div>
     </div>
