@@ -1,6 +1,8 @@
 .searchbar {
   color: white;
   padding: 5rem 0rem;
+  position: relative;
+  z-index: 3;
 }
 
 .CravingsDiv {

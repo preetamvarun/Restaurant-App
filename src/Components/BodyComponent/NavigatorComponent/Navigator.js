@@ -1,18 +1,10 @@
-import logo from '../NavigatorComponent/chef.png';
 import './Navigator.css';
 
 const Navigator = () => {
   return (
     <div className='Navigator'>
-      {/*Logo*/}
-      <div className='image-logo' style={{ flex: 1 }}>
-        <a href='/'>
-          <img src={logo} alt='eye-lens-logo' />
-        </a>
-      </div>
-
       {/*List Items in the navigator*/}
-      <div className='Nav-Links' style={{ flex: 2 }}>
+      <div className='Nav-Links'>
         <ul style={{ display: 'flex', justifyContent: 'center' }}>
           <li>
             <a href='/'>Home</a>
@@ -30,7 +22,7 @@ const Navigator = () => {
       </div>
 
       {/*Cart Icon*/}
-      <div className='cart-icon' style={{ flex: 1 }}>
+      <div className='cart-icon'>
         <i class='fa-solid fa-cart-shopping'></i>
       </div>
     </div>

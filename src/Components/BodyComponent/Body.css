@@ -1,6 +1,7 @@
 .FoodClass {
   background: url('./searchbarImage.jpg') no-repeat right center/cover;
   position: relative;
+  z-index: 1;
 }
 
 .FoodClass:before {
@@ -10,6 +11,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-color: rgba(0, 0, 0, 0.375);
   z-index: 2;
 }

@@ -9,17 +9,12 @@
 .Navigator {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-}
-
-.Navigator .image-logo {
-  height: 75px;
-  width: 100%;
-}
-
-.Navigator .image-logo img {
-  height: 100%;
+  position: relative;
+  z-index: 3;
+  color: white;
+  padding: 1.65rem 2.5rem;
 }
 
 .Navigator ul {
@@ -29,17 +24,13 @@
 }
 
 .Navigator ul li {
-  padding: 0rem 0.75rem;
+  padding: 0rem 1.75rem;
 }
 
 .Navigator ul li a {
   text-decoration: none;
   display: inline-block;
-  color: black;
-}
-
-.Nav-Links {
-  flex: 2;
+  color: white;
 }
 
 .Navigator .cart-icon {
