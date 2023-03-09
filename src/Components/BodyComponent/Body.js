@@ -2,11 +2,15 @@ import React from 'react';
 import Navigator from './NavigatorComponent/Navigator';
 import Searchbar from './SearchBarComponent/Searchbar';
 
+import './Body.css';
+
 const Body = () => {
   return (
     <React.Fragment>
-      <Navigator />
-      <Searchbar />
+      <div className='FoodClass'>
+        <Navigator />
+        <Searchbar />
+      </div>
     </React.Fragment>
   );
 };
