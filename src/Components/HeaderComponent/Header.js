@@ -2,7 +2,7 @@ import React from 'react';
 import Navigator from './NavigatorComponent/Navigator';
 import Searchbar from './SearchBarComponent/Searchbar';
 
-import './Body.css';
+import './Header.css';
 
 const Body = () => {
   return (
