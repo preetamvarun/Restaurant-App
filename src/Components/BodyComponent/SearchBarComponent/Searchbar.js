@@ -12,7 +12,7 @@ const Searchbar = () => {
     <div className='CravingsDiv'>
       <p>
         Search For Your Cravings
-        <span>🍜🍕</span>
+        <span>🍕</span>
       </p>
       <div className='inputDiv'>
         <input

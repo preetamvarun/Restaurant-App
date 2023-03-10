@@ -24,7 +24,30 @@
 }
 
 .Navigator ul li {
-  padding: 0rem 1.75rem;
+  padding: 0.25rem 1.75rem;
+  position: relative;
+  margin: 0.35rem;
+}
+
+.Navigator ul li:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 50%;
+  border-radius: 2px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: #f79d53;
+  margin-top: 0.2rem;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 400ms;
+}
+
+.Navigator ul li:hover:after {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .Navigator ul li a {
@@ -34,5 +57,12 @@
 }
 
 .Navigator .cart-icon {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+  transition-property: color;
+  transition-duration: 450ms;
+}
+
+.Navigator .cart-icon:hover {
+  color: #f79d53;
+  cursor: pointer;
 }
