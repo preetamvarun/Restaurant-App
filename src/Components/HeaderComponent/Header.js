@@ -4,7 +4,7 @@ import Searchbar from './SearchBarComponent/Searchbar';
 
 import './Header.css';
 
-const Body = () => {
+const Header = () => {
   return (
     <React.Fragment>
       <div className='FoodClass'>
@@ -15,4 +15,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Header;
