@@ -1,0 +1,23 @@
+.RestaurantDiv {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.RestaurantDiv > h1 {
+  position: relative;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+.RestaurantDiv > h1::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 15%;
+  background-color: orange;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}

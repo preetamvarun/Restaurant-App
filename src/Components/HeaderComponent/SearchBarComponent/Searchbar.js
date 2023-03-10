@@ -22,7 +22,7 @@ const Searchbar = () => {
           onChange={handleChange}
         />
         <button>
-          <i class='fa-solid fa-magnifying-glass'></i>
+          <i className='fa-solid fa-magnifying-glass'></i>
         </button>
       </div>
     </div>

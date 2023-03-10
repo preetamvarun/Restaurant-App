@@ -23,7 +23,7 @@ const Navigator = () => {
 
       {/*Cart Icon*/}
       <div className='cart-icon'>
-        <i class='fa-solid fa-cart-shopping'></i>
+        <i className='fa-solid fa-cart-shopping'></i>
       </div>
     </div>
   );
