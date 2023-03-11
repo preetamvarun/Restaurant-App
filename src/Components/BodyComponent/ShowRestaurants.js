@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import useGetAllRestaurants from '../../utils/useGetAllRestaurants';
+import Restaurant from './Restaurant';
 import './ShowRestaurant.css';
 
 const ShowRestaurants = () => {
@@ -11,19 +12,13 @@ const ShowRestaurants = () => {
     setfilteredRestaurants(allRestaurants);
   }, [allRestaurants]);
 
-  const arr = allRestaurants?.data?.cards?.filter(
+  const arrOfRestaurants = allRestaurants?.data?.cards?.filter(
     (eachCard) => eachCard?.cardType !== 'carousel'
-  )[0];
+  )[0]?.data?.data?.cards;
 
-  const oneRestaurant = arr?.data?.data?.cards[0];
+  console.log(arrOfRestaurants);
 
-  console.log(oneRestaurant?.data);
-
-  return (
-    <div className='allRestaurants'>
-      <h1>About to show some Restaurants</h1>
-    </div>
-  );
+  return <div className='allRestaurants'></div>;
 };
 
 export default ShowRestaurants;
