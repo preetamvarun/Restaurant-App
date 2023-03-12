@@ -1,4 +1,4 @@
-import useGetAllRestaurants from '../../utils/useGetAllRestaurants';
+import useGetAllRestaurants from '../../Hooks/useGetAllRestaurants';
 import Restaurant from './Restaurant.js';
 import './ShowRestaurant.css';
 

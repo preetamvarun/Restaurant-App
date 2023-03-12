@@ -10,15 +10,15 @@ const Restaurant = ({
   aggregatedDiscountInfo,
   cloudinaryImageId,
 }) => {
+  // Changing ratingBackgroundColor
+
   let ratingBackgroundColor;
   cuisines.length >= 2 && cuisines.splice(3);
-  if (Number(avgRating) >= 4) {
-    ratingBackgroundColor = 'green';
-  } else if (Number(avgRating) >= 3 && Number(avgRating) < 4) {
+  if (Number(avgRating) >= 4) ratingBackgroundColor = 'green';
+  else if (Number(avgRating) >= 3 && Number(avgRating) < 4)
     ratingBackgroundColor = 'orange';
-  } else {
-    ratingBackgroundColor = 'red';
-  }
+  else ratingBackgroundColor = 'red';
+
   return (
     <div className='Restaurant'>
       <div className='RestaurantImgDiv'>
