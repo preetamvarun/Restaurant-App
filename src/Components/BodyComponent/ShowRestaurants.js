@@ -1,5 +1,5 @@
 import useGetAllRestaurants from '../../utils/useGetAllRestaurants';
-import Restaurant from './Restaurant';
+import Restaurant from './Restaurant.js';
 import './ShowRestaurant.css';
 
 const ShowRestaurants = () => {

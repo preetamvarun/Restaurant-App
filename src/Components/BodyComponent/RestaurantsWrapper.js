@@ -1,13 +1,13 @@
-import './Restaurant.css';
 import ShowRestaurants from './ShowRestaurants';
+import './RestaurantsWrapper.css';
 
-const Restaurant = () => {
+const RestaurantsWrapper = () => {
   return (
-    <div className='RestaurantDiv'>
+    <div className='RestaurantWrapperDiv'>
       <h1>Featured Restaurants: Discover Our Top Picks</h1>
       <ShowRestaurants />
     </div>
   );
 };
 
-export default Restaurant;
+export default RestaurantsWrapper;

@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Components/HeaderComponent/Header';
-import Restaurant from './Components/BodyComponent/Restaurants';
+import RestaurantsWrapper from './Components/BodyComponent/RestaurantsWrapper';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <Restaurant />
+      <RestaurantsWrapper />
     </div>
   );
 }
