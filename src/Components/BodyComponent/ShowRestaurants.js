@@ -2,6 +2,7 @@ import useGetAllRestaurants from '../../Hooks/useGetAllRestaurants';
 import Restaurant from './Restaurant.js';
 import './ShowRestaurant.css';
 import { useEffect, useState } from 'react';
+import UseFilterFoods from '../../Hooks/UseFilterFoods';
 
 const ShowRestaurants = () => {
   const allRestaurants = useGetAllRestaurants()?.data?.cards?.filter(
@@ -15,34 +16,9 @@ const ShowRestaurants = () => {
   }, [allRestaurants]);
 
   const handleClick = (evt) => {
-    const arr = [...requiredRestaurants];
-    console.log(arr);
-    // Filter Based on Rating
-    if (evt.target.textContent === 'Rating') {
-      arr.sort(
-        (obj1, obj2) =>
-          (isNaN(Number(obj2.data.avgRating))
-            ? 0
-            : Number(obj2.data.avgRating)) -
-          (isNaN(Number(obj1.data.avgRating)) === '--'
-            ? 0
-            : Number(obj1.data.avgRating))
-      );
-    }
-    // Filter Based on Delivery Time
-    if (evt.target.textContent === 'Delivery Time') {
-      arr.sort((obj1, obj2) => obj1.data.deliveryTime - obj2.data.deliveryTime);
-    }
-    // Filter Based on Cost : Low to High
-    if (evt.target.textContent.includes('Low To High')) {
-      arr.sort((obj1, obj2) => obj1.data.costForTwo - obj2.data.costForTwo);
-    }
-
-    if (evt.target.textContent.includes('High To Low')) {
-      arr.sort((obj1, obj2) => obj2.data.costForTwo - obj1.data.costForTwo);
-    }
-    // Filter Based on Cost : Hight to Low
-    setRequiredRestaurants(arr);
+    const filterMode = evt.target.textContent;
+    const cuisines = UseFilterFoods(requiredRestaurants, filterMode);
+    setRequiredRestaurants(cuisines);
   };
 
   return (
