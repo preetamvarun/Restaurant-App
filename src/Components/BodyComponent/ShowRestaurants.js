@@ -15,6 +15,7 @@ const ShowRestaurants = () => {
 
   const [requiredRestaurants, setRequiredRestaurants] = useState([]);
 
+  // Filtering out restaurants when users search something
   useEffect(() => {
     const arr = allRestaurants?.filter((resObj) =>
       resObj.data.name.includes(searchFood)
@@ -23,6 +24,7 @@ const ShowRestaurants = () => {
     // eslint-disable-next-line
   }, [searchFood]);
 
+  // Intially, allRestaurants === requiredRestaurants
   useEffect(() => {
     setRequiredRestaurants(allRestaurants);
   }, [allRestaurants]);

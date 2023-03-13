@@ -11,10 +11,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 3;
+  z-index: 30;
   color: white;
-  padding: 1.65rem 2.5rem;
+  padding: 0.85rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.192);
+  position: fixed;
+  width: 100%;
 }
 
 .Navigator ul {
@@ -26,7 +28,7 @@
 .Navigator ul li {
   padding: 0.25rem 1.75rem;
   position: relative;
-  margin: 0.35rem;
+  margin: 0rem 0.35rem;
 }
 
 .Navigator ul li:after {
