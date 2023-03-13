@@ -61,7 +61,7 @@
   opacity: 1;
 }
 
-.Filters ul li a {
+.Filters ul li {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
@@ -70,6 +70,7 @@
   transition: color 200ms ease-in;
 }
 
-.Filters ul li a:hover {
+.Filters ul li:hover {
   color: #3d4152;
+  cursor: pointer;
 }
