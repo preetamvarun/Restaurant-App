@@ -10,10 +10,29 @@ const ShowRestaurants = () => {
   )[0]?.data?.data?.cards;
 
   return (
-    <div className='allRestaurants'>
-      {arrOfRestaurants?.map((restaurant) => (
-        <Restaurant {...restaurant?.data} key={restaurant?.data?.id} />
-      ))}
+    <div className='allRestaurantsWrapper'>
+      <div className='Filters'>
+        <h1>15 restaurants</h1>
+        <ul>
+          <li>
+            <a href='/'>Delivery Time</a>
+          </li>
+          <li>
+            <a href='/'>Rating</a>
+          </li>
+          <li>
+            <a href='/'>Cost : Low To High</a>
+          </li>
+          <li>
+            <a href='/'>Cost : High To Low</a>
+          </li>
+        </ul>
+      </div>
+      <div className='allRestaurants'>
+        {arrOfRestaurants?.map((restaurant) => (
+          <Restaurant {...restaurant?.data} key={restaurant?.data?.id} />
+        ))}
+      </div>
     </div>
   );
 };

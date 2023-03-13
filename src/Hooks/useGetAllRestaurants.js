@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { API_URL } from '../utils/Config';
+import { API_URL } from '../Utils/Config';
 
 const GetAllRestaurants = () => {
   const [allRestaurants, setAllRestaurants] = useState('');
