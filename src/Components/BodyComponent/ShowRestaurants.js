@@ -3,8 +3,14 @@ import Restaurant from './Restaurant.js';
 import './ShowRestaurant.css';
 import { useEffect, useState } from 'react';
 import UseFilterFoods from '../../Hooks/UseFilterFoods';
+import { useContext } from 'react';
+import { FoodContext } from '../../Utils/SearchFoodContext';
 
 const ShowRestaurants = () => {
+  const { searchFood } = useContext(FoodContext);
+
+  console.log(searchFood);
+
   const allRestaurants = useGetAllRestaurants()?.data?.cards?.filter(
     (eachCard) => eachCard?.cardType !== 'carousel'
   )[0]?.data?.data?.cards;

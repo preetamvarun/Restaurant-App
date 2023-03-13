@@ -4,14 +4,12 @@ import Searchbar from './SearchBarComponent/Searchbar';
 
 import './Header.css';
 
-const Header = () => {
+const Header = ({ handleFoodSearchChange }) => {
   return (
-    <React.Fragment>
-      <div className='FoodClass'>
-        <Navigator />
-        <Searchbar />
-      </div>
-    </React.Fragment>
+    <div className='FoodClass'>
+      <Navigator />
+      <Searchbar />
+    </div>
   );
 };
 

@@ -1,11 +1,14 @@
-import { useState } from 'react';
 import './Searchbar.css';
 
+import { useContext } from 'react';
+
+import { FoodContext } from '../../../Utils/SearchFoodContext';
+
 const Searchbar = () => {
-  const [searchFood, setSearchFood] = useState('');
+  const { handleSearchFood } = useContext(FoodContext);
 
   const handleChange = (evt) => {
-    setSearchFood(evt.target.value);
+    handleSearchFood(evt.target.value);
   };
 
   return (
@@ -18,7 +21,6 @@ const Searchbar = () => {
         <input
           type={'text'}
           placeholder={'search food...'}
-          value={searchFood}
           onChange={handleChange}
         />
         <button>
