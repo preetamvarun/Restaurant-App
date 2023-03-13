@@ -1,7 +1,5 @@
 import './Searchbar.css';
-
 import { useContext } from 'react';
-
 import { FoodContext } from '../../../Utils/SearchFoodContext';
 
 const Searchbar = () => {

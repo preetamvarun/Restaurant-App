@@ -9,13 +9,19 @@ import { FoodContext } from '../../Utils/SearchFoodContext';
 const ShowRestaurants = () => {
   const { searchFood } = useContext(FoodContext);
 
-  console.log(searchFood);
-
   const allRestaurants = useGetAllRestaurants()?.data?.cards?.filter(
     (eachCard) => eachCard?.cardType !== 'carousel'
   )[0]?.data?.data?.cards;
 
-  const [requiredRestaurants, setRequiredRestaurants] = useState();
+  const [requiredRestaurants, setRequiredRestaurants] = useState([]);
+
+  useEffect(() => {
+    const arr = allRestaurants?.filter((resObj) =>
+      resObj.data.name.includes(searchFood)
+    );
+    setRequiredRestaurants(arr);
+    // eslint-disable-next-line
+  }, [searchFood]);
 
   useEffect(() => {
     setRequiredRestaurants(allRestaurants);
@@ -30,7 +36,7 @@ const ShowRestaurants = () => {
   return (
     <div className='allRestaurantsWrapper'>
       <div className='Filters'>
-        <h1>15 restaurants</h1>
+        <h1>{requiredRestaurants?.length} restaurants</h1>
         <ul>
           <li onClick={handleClick}>Delivery Time</li>
           <li onClick={handleClick}>Rating</li>

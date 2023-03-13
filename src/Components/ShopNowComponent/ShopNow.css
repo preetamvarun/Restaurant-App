@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Shop-Now {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.shop_now_text {
+  width: 50%;
+}
+
+.Specs-Image {
+  flex: 1;
+  width: 50%;
+  background-color: green;
+}
