@@ -26,7 +26,7 @@ function App() {
             <Route path='/' Component={RestaurantsWrapper} />
             <Route path='/help' Component={Help} />
             <Route path='/offers' Component={Offers} />
-            <Route path='/restaurant/:name' Component={RestaurantMenu} />
+            <Route path='/restaurant/:id' Component={RestaurantMenu} />
           </Routes>
         </FoodContext.Provider>
       </div>
