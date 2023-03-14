@@ -1,10 +1,10 @@
 import React from 'react';
-import Navigator from './NavigatorComponent/Navigator';
+import Navigator from '../HeaderComponent/NavigatorComponent/Navigator';
 import Searchbar from './SearchBarComponent/Searchbar';
 
 import './Header.css';
 
-const Header = ({ handleFoodSearchChange }) => {
+const Header = () => {
   return (
     <div className='FoodClass'>
       <Navigator />

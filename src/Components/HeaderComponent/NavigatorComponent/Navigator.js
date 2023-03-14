@@ -1,4 +1,5 @@
 import './Navigator.css';
+import { Link } from 'react-router-dom';
 
 const Navigator = () => {
   return (
@@ -7,16 +8,16 @@ const Navigator = () => {
       <div className='Nav-Links'>
         <ul style={{ display: 'flex', justifyContent: 'center' }}>
           <li>
-            <a href='/'>Home</a>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/'>Offers</a>
+            <a href='/offers'>Offers</a>
           </li>
           <li>
-            <a href='/'>About</a>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <a href='/'>Help</a>
+            <a href='/help'>Help</a>
           </li>
         </ul>
       </div>
