@@ -2,6 +2,7 @@ import './Searchbar.css';
 import { useContext } from 'react';
 import { FoodContext } from '../../../Utils/SearchFoodContext';
 import { useLocation } from 'react-router-dom';
+import useDisplayText from '../../../Hooks/useDisplayText';
 
 const Searchbar = () => {
   const { handleSearchFood } = useContext(FoodContext);
@@ -11,24 +12,10 @@ const Searchbar = () => {
   };
 
   const location = useLocation();
+
   const showSearchBar = location.pathname === '/';
 
-  let text = '';
-
-  if (location.pathname === '/') {
-    text = (
-      <p>
-        Search For Your Cravings
-        <span>🍕</span>
-      </p>
-    );
-  } else if (location.pathname === '/about') {
-    text = <p>Get To Know Us !</p>;
-  } else if (location.pathname === '/offers') {
-    text = <p>Know what can we offer you 🏷️</p>;
-  } else {
-    text = <p>Welcome To Help Section 💁</p>;
-  }
+  const text = useDisplayText(location.pathname);
 
   return (
     <div className='CravingsDiv'>

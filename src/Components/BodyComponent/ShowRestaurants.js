@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import UseFilterFoods from '../../Hooks/UseFilterFoods';
 import { useContext } from 'react';
 import { FoodContext } from '../../Utils/SearchFoodContext';
+import { Link } from 'react-router-dom';
 
 const ShowRestaurants = () => {
   const { searchFood } = useContext(FoodContext);
@@ -49,7 +50,16 @@ const ShowRestaurants = () => {
       <div className='allRestaurants'>
         {requiredRestaurants &&
           requiredRestaurants?.map((restaurant) => (
-            <Restaurant {...restaurant?.data} key={restaurant?.data?.id} />
+            <Link
+              key={restaurant?.data?.id}
+              to={`/restaurant/${restaurant?.data?.name}`}
+              style={{
+                display: 'inline-block',
+                textDecoration: 'none',
+                color: 'black',
+              }}>
+              <Restaurant {...restaurant?.data} />
+            </Link>
           ))}
       </div>
     </div>

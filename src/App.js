@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './Components/AboutComponent/About';
 import Help from './Components/HelpComponent/Help';
 import Offers from './Components/OffersComponent/Offers';
+import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu';
 
 function App() {
   const [searchFood, setSearchFood] = useState('');
@@ -25,6 +26,7 @@ function App() {
             <Route path='/' Component={RestaurantsWrapper} />
             <Route path='/help' Component={Help} />
             <Route path='/offers' Component={Offers} />
+            <Route path='/restaurant/:name' Component={RestaurantMenu} />
           </Routes>
         </FoodContext.Provider>
       </div>
