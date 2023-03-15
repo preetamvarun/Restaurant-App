@@ -22,7 +22,7 @@ const Searchbar = () => {
     <div
       className='CravingsDiv'
       style={{ display: `${!showCravingsDiv} ? block : none` }}>
-      {text}
+      <p className='Display-Text'>{text}</p>
       {showSearchBar && (
         <div className='inputDiv'>
           <input
