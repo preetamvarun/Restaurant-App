@@ -13,6 +13,8 @@ const useDisplayText = (path) => {
     text = <p>Know what can we offer you 🏷️</p>;
   } else if (path === '/help') {
     text = <p>Welcome To Help Section 💁</p>;
+  } else if (path.includes('/restaurant/')) {
+    text = '334';
   } else {
     text = '';
   }

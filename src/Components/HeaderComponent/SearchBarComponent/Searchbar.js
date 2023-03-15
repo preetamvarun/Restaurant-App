@@ -14,11 +14,14 @@ const Searchbar = () => {
   const location = useLocation();
 
   const showSearchBar = location.pathname === '/';
+  const showCravingsDiv = location.pathname.includes('/restaurant/');
 
   const text = useDisplayText(location.pathname);
 
   return (
-    <div className='CravingsDiv'>
+    <div
+      className='CravingsDiv'
+      style={{ display: `${!showCravingsDiv} ? block : none` }}>
       {text}
       {showSearchBar && (
         <div className='inputDiv'>
