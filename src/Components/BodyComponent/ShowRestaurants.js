@@ -52,7 +52,7 @@ const ShowRestaurants = () => {
           requiredRestaurants?.map((restaurant) => (
             <Link
               key={restaurant?.data?.id}
-              to={`/restaurant/${restaurant?.data?.name}`}
+              to={`/restaurant/${restaurant?.data?.id}`}
               style={{
                 display: 'inline-block',
                 textDecoration: 'none',

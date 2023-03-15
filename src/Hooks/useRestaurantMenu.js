@@ -5,7 +5,7 @@ const useRestaurantMenu = (id) => {
   const [resMenu, setResMenu] = useState();
 
   async function getMenu() {
-    const res = await fetch(FETCH_MENU_URL + `/${id}`);
+    const res = await fetch(FETCH_MENU_URL + `${id}`);
     const data = await res.json();
     setResMenu(data);
   }

@@ -4,6 +4,7 @@ import useRestaurantMenu from '../../Hooks/useRestaurantMenu';
 
 const RestaurantMenu = () => {
   const { id } = useParams();
+  console.log(id);
   const [restaurantMenu, setRestaurantMenu] = useState('');
 
   const menuData = useRestaurantMenu(id);
