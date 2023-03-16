@@ -1,0 +1,62 @@
+.RecommendRestaurantDiv {
+  margin: 0.75rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0rem;
+}
+
+.RecommendRestaurantDiv .Text-Div {
+  width: 65%;
+  text-align: left;
+}
+
+.RecommendRestaurantDiv .Text-Div p:first-child {
+  font-weight: 700;
+}
+
+.RecommendRestaurantDiv .Text-Div p {
+  padding: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.RecommendRestaurantDiv .Text-Div p:last-child {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #848591;
+}
+
+.RecommendRestaurantDiv .Image-Div-Wrapper {
+  position: relative;
+  height: 120px;
+  width: 130px;
+  margin-right: 0.2rem;
+}
+
+.RecommendRestaurantDiv .Image-Div {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.RecommendRestaurantDiv .Image-Div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.RecommendRestaurantDiv .Image-Div-Wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  transform: translate(-50%, 30%);
+  padding: 0.25rem 0.75rem;
+  color: #3d9b6d;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}

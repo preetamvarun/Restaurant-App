@@ -10,10 +10,10 @@ const Restaurant = ({
   aggregatedDiscountInfo,
   cloudinaryImageId,
 }) => {
-  // Changing ratingBackgroundColor
-
-  let ratingBackgroundColor;
   cuisines.length >= 2 && cuisines.splice(3);
+
+  // Changing ratingBackgroundColor
+  let ratingBackgroundColor;
   if (Number(avgRating) >= 4) ratingBackgroundColor = 'green';
   else if (Number(avgRating) >= 3 && Number(avgRating) < 4)
     ratingBackgroundColor = 'orange';
@@ -57,7 +57,7 @@ const Restaurant = ({
         {/* Here You have to draw a horizontal line */}
         <div className='DiscountInfo'>
           <i className='fa-solid fa-tag'></i>
-          <span>{aggregatedDiscountInfo.shortDescriptionList[0].meta}</span>
+          <span>{aggregatedDiscountInfo?.shortDescriptionList[0]?.meta}</span>
         </div>
         <hr className='horizontalLine' />
         {/* Here You have to draw a horizontal line */}
