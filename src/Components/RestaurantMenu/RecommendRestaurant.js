@@ -14,7 +14,7 @@ const RecommedRestaurant = ({
         <div className='Text-Div'>
           <p>{name}</p>
           <p>
-            {Math.round(price / 30)}
+            {Math.round(price / 100)}
             <i
               className='fa-solid fa-indian-rupee-sign'
               style={{
