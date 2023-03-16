@@ -1,5 +1,6 @@
 import { IMG_URL } from '../../Utils/Config';
 import './Restaurant.css';
+import useChangeRatingBck from '../../Hooks/useChangeRatingBck';
 
 const Restaurant = ({
   name,
@@ -13,11 +14,7 @@ const Restaurant = ({
   cuisines.length >= 2 && cuisines.splice(3);
 
   // Changing ratingBackgroundColor
-  let ratingBackgroundColor;
-  if (Number(avgRating) >= 4) ratingBackgroundColor = 'green';
-  else if (Number(avgRating) >= 3 && Number(avgRating) < 4)
-    ratingBackgroundColor = 'orange';
-  else ratingBackgroundColor = 'red';
+  let ratingBackgroundColor = useChangeRatingBck(avgRating);
 
   return (
     <div className='Restaurant'>
