@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import useRestaurantMenu from '../../Hooks/useRestaurantMenu';
 import './RestaurantMenu.css';
 import RecommedRestaurant from './RecommendRestaurant';
+import { v4 as uuidv4 } from 'uuid';
 
 const RestaurantMenu = () => {
   const { id } = useParams();
@@ -23,6 +24,8 @@ const RestaurantMenu = () => {
       .map((a) => a?.card?.card?.itemCards)
       .flat(1)
       .map((a) => a?.card?.info);
+
+  console.log(restaurantMenus);
 
   return (
     <div className='Main-Menu'>
@@ -66,7 +69,7 @@ const RestaurantMenu = () => {
         <div className='Recommended-Restaurants'>
           {restaurantMenus &&
             restaurantMenus.map((restaurantMenu) => (
-              <RecommedRestaurant {...restaurantMenu} key={restaurantMenu.id} />
+              <RecommedRestaurant {...restaurantMenu} key={uuidv4()} />
             ))}
         </div>
       }

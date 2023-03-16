@@ -1,13 +1,8 @@
 import './RecommendRestaurantStyles.css';
 import { IMG_URL } from '../../Utils/Config';
-import backupImage from '../RestaurantMenu/broken-img.png';
+import backupImage from '../RestaurantMenu/broken-img-v1.png';
 
-const RecommedRestaurant = ({
-  name,
-  price,
-  description,
-  cloudinaryImageId,
-}) => {
+const RecommedRestaurant = ({ name, price, description, imageId }) => {
   return (
     <div>
       <div className='RecommendRestaurantDiv'>
@@ -27,7 +22,7 @@ const RecommedRestaurant = ({
         <div className='Image-Div-Wrapper'>
           <div className='Image-Div'>
             <img
-              src={IMG_URL + cloudinaryImageId}
+              src={IMG_URL + imageId}
               alt={name}
               onError={(e) => (e.target.src = backupImage)}
             />
