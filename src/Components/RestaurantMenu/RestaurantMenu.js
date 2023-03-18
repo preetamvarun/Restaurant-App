@@ -25,8 +25,6 @@ const RestaurantMenu = () => {
       .flat(1)
       .map((a) => a?.card?.info);
 
-  console.log(restaurantMenus);
-
   return (
     <div className='Main-Menu'>
       <div className='Intro-Div'>

@@ -3,13 +3,16 @@ import { IMG_URL } from '../../Utils/Config';
 import backupImage from '../RestaurantMenu/broken-img-v1.png';
 
 const RecommedRestaurant = ({ name, price, description, imageId }) => {
+  console.log(price);
   return (
     <div>
       <div className='RecommendRestaurantDiv'>
         <div className='Text-Div'>
           <p>{name}</p>
           <p>
-            {Math.round(price / 100)}
+            {!price
+              ? Math.round(Math.random() * 100 + 100)
+              : Math.round(price / 100)}
             <i
               className='fa-solid fa-indian-rupee-sign'
               style={{
@@ -27,7 +30,9 @@ const RecommedRestaurant = ({ name, price, description, imageId }) => {
               onError={(e) => (e.target.src = backupImage)}
             />
           </div>
-          <a href='/'>Add +</a>
+          <a href='/' className='Add-Link'>
+            Add +
+          </a>
         </div>
       </div>
       <hr />

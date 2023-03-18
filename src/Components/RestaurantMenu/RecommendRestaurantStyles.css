@@ -48,14 +48,14 @@
   object-fit: cover;
 }
 
-.RecommendRestaurantDiv .Image-Div-Wrapper a {
+.RecommendRestaurantDiv .Image-Div-Wrapper .Add-Link {
   display: inline-block;
   text-decoration: none;
   position: absolute;
   bottom: 0;
   background-color: white;
   transform: translate(-50%, 30%);
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.7rem;
   color: #3d9b6d;
   font-size: 0.9rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
