@@ -4,7 +4,7 @@ import './ShowRestaurant.css';
 import { useEffect, useState } from 'react';
 import UseFilterFoods from '../../Hooks/UseFilterFoods';
 import { useContext } from 'react';
-import { FoodContext } from '../../Utils/SearchFoodContext';
+import { FoodContext } from '../../utils/SearchFoodContext';
 import { Link } from 'react-router-dom';
 
 const ShowRestaurants = () => {

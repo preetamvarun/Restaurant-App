@@ -1,4 +1,4 @@
-import { IMG_URL } from '../../Utils/Config';
+import { IMG_URL } from '../../utils/Config';
 import './Restaurant.css';
 import useChangeRatingBck from '../../Hooks/useChangeRatingBck';
 

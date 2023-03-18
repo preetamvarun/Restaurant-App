@@ -1,9 +1,8 @@
 import './RecommendRestaurantStyles.css';
-import { IMG_URL } from '../../Utils/Config';
+import { IMG_URL } from '../../utils/Config';
 import backupImage from '../RestaurantMenu/broken-img-v1.png';
 
 const RecommedRestaurant = ({ name, price, description, imageId }) => {
-  console.log(price);
   return (
     <div>
       <div className='RecommendRestaurantDiv'>

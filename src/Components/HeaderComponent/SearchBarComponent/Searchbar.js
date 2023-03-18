@@ -1,6 +1,6 @@
 import './Searchbar.css';
 import { useContext } from 'react';
-import { FoodContext } from '../../../Utils/SearchFoodContext';
+import { FoodContext } from '../../../utils/SearchFoodContext';
 import { useLocation } from 'react-router-dom';
 import useDisplayText from '../../../Hooks/useDisplayText';
 
