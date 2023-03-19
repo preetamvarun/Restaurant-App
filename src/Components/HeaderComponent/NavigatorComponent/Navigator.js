@@ -1,7 +1,9 @@
 import './Navigator.css';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navigator = () => {
+  const cartItems = useSelector((store) => store.cart.items);
   return (
     <div className='Navigator'>
       {/*List Items in the navigator*/}
@@ -25,6 +27,7 @@ const Navigator = () => {
       {/*Cart Icon*/}
       <div className='cart-icon'>
         <i className='fa-solid fa-cart-shopping'></i>
+        <span style={{ margin: '1rem' }}>{cartItems.length}</span>
       </div>
     </div>
   );
