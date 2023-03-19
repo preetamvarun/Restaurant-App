@@ -8,6 +8,7 @@ import About from './Components/AboutComponent/About';
 import Help from './Components/HelpComponent/Help';
 import Offers from './Components/OffersComponent/Offers';
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu';
+import Cart from './Components/Cart/Cart';
 
 function App() {
   const [searchFood, setSearchFood] = useState('');
@@ -27,6 +28,7 @@ function App() {
             <Route path='/help' Component={Help} />
             <Route path='/offers' Component={Offers} />
             <Route path='/restaurant/:id' Component={RestaurantMenu} />
+            <Route path='/cart' Component={Cart} />
           </Routes>
         </FoodContext.Provider>
       </div>
