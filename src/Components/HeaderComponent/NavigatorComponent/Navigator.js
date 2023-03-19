@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 
 const Navigator = () => {
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
   return (
     <div className='Navigator'>
       {/*List Items in the navigator*/}
@@ -20,15 +19,19 @@ const Navigator = () => {
             <Link to='/about'>About</Link>
           </li>
           <li>
-            <a href='/help'>Help</a>
+            <Link to='/help'>Help</Link>
           </li>
         </ul>
       </div>
 
       {/*Cart Icon*/}
       <div className='cart-icon'>
-        <i className='fa-solid fa-cart-shopping'></i>
-        <span style={{ margin: '1rem' }}>{cartItems.length}</span>
+        <Link to='/cart' style={{ textDecoration: 'none', color: 'orange' }}>
+          <i className='fa-solid fa-cart-shopping'></i>
+          <span style={{ margin: '1rem', color: 'white' }}>
+            {cartItems.length}
+          </span>
+        </Link>
       </div>
     </div>
   );

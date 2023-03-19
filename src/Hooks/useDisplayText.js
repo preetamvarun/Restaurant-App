@@ -15,6 +15,8 @@ const useDisplayText = (path) => {
     text = <p>Welcome To Help Section 💁</p>;
   } else if (path.includes('/restaurant/')) {
     text = 'Click on your cuisine to indulge in our delicious dishes';
+  } else if (path === '/cart') {
+    text = 'Your Cart🛒';
   } else {
     text = '';
   }
