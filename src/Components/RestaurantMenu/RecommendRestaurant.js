@@ -1,17 +1,27 @@
 import './RecommendRestaurantStyles.css';
 import { IMG_URL } from '../../utils/Config';
 import backupImage from '../RestaurantMenu/broken-img-v1.png';
+import { addItem } from '../../utils/CartSlice';
+import { useDispatch } from 'react-redux';
 
 const RecommedRestaurant = ({ name, price, description, imageId }) => {
+  const newPrice = !price
+    ? Math.round(Math.random() * 100 + 100)
+    : Math.round(price / 100);
+
+  const dispatch = useDispatch();
+
+  const handleAddItem = () => {
+    dispatch(addItem({ name, newPrice, description, imageId }));
+  };
+
   return (
     <div>
       <div className='RecommendRestaurantDiv'>
         <div className='Text-Div'>
           <p>{name}</p>
           <p>
-            {!price
-              ? Math.round(Math.random() * 100 + 100)
-              : Math.round(price / 100)}
+            {newPrice}
             <i
               className='fa-solid fa-indian-rupee-sign'
               style={{
@@ -29,9 +39,9 @@ const RecommedRestaurant = ({ name, price, description, imageId }) => {
               onError={(e) => (e.target.src = backupImage)}
             />
           </div>
-          <a href='/' className='Add-Link'>
+          <span href='/' className='Add-Link' onClick={handleAddItem}>
             Add +
-          </a>
+          </span>
         </div>
       </div>
       <hr />
