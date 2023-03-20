@@ -1,7 +1,7 @@
 .Restaurant {
   margin: 0.5rem;
   position: relative;
-  max-width: 280px;
+  width: 280px;
   height: 420px;
   position: relative;
 }

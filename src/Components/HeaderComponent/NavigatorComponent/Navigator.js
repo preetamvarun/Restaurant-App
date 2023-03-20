@@ -13,7 +13,7 @@ const Navigator = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <a href='/offers'>Offers</a>
+            <Link to='/offers'>Offers</Link>
           </li>
           <li>
             <Link to='/about'>About</Link>
