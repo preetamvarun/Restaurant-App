@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import FoodCart from './FoodCart';
 import { clearCart } from '../../utils/CartSlice';
 import { v4 as uuidv4 } from 'uuid';
-import Billing from './Billing';
 
 const Cart = () => {
   const cartItems = Array.from(useSelector((store) => store.cart.items));
@@ -45,7 +44,9 @@ const Cart = () => {
               <FoodCart {...eachItem} key={uuidv4()} />
             ))}
           </div>
-          <button onClick={handleClear}>Clear Cart</button>
+          <button onClick={handleClear} className='Clear-Btn'>
+            Clear Cart
+          </button>
         </div>
       )}
     </div>
