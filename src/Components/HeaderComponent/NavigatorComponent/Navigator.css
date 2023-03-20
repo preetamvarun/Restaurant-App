@@ -58,13 +58,15 @@
   color: white;
 }
 
-.Navigator .cart-icon {
+.Navigator .cart-icon a {
   font-size: 1.5rem;
   transition-property: color;
   transition-duration: 450ms;
+  color: white;
+  text-decoration: none;
 }
 
-.Navigator .cart-icon:hover {
+.Navigator .cart-icon a:hover {
   color: #f79d53;
   cursor: pointer;
 }
