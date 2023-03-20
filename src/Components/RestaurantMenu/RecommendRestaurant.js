@@ -12,7 +12,7 @@ const RecommedRestaurant = ({ name, price, description, imageId }) => {
   const dispatch = useDispatch();
 
   const handleAddItem = () => {
-    dispatch(addItem({ name, newPrice, description, imageId }));
+    dispatch(addItem({ name, newPrice, imageId }));
   };
 
   return (

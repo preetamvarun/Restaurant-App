@@ -2,8 +2,15 @@
   margin: 0.5rem;
   position: relative;
   max-width: 280px;
-  height: 420px;
+  height: 380px;
   position: relative;
+  text-align: left;
+  padding: 1rem 0rem;
+}
+
+.Food-Cart:hover {
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.17);
 }
 
 .Food-Cart:hover {
@@ -12,7 +19,7 @@
 
 .Food-Cart-Img-Div {
   display: inline-block;
-  margin: 0.75rem;
+  margin: 0.45rem;
   position: relative;
   overflow: hidden;
 }
@@ -27,4 +34,18 @@
 
 .Food-Cart-Img-Div img:hover {
   transform: scale(1.1);
+}
+
+.Food-Cart .Food-Cart-Text-Div {
+  margin-left: 0.65rem;
+  line-height: 1.5rem;
+}
+
+.Food-Cart .Name {
+  margin: 0.5rem 0rem;
+  width: 95%;
+}
+
+.Food-Cart .Price {
+  margin-top: 0.35rem;
 }

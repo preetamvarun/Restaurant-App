@@ -6,7 +6,7 @@ import FoodCart from './FoodCart';
 import { clearCart } from '../../utils/CartSlice';
 
 const Cart = () => {
-  const cartItems = useSelector((store) => store.cart.items);
+  const cartItems = Array.from(useSelector((store) => store.cart.items));
   const disptach = useDispatch();
   const handleClear = () => {
     disptach(clearCart());
@@ -25,7 +25,8 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className='Food-Cart-Wrapper-Upper'>
+          <h1>Savor the flavors in your cart</h1>
           <div className='Food-Cart-Wrapper'>
             {cartItems.map((eachItem) => (
               <FoodCart {...eachItem} />
