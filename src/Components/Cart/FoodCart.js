@@ -1,5 +1,7 @@
 import { IMG_URL } from '../../utils/Config';
 import './FoodCart.css';
+import { useDispatch } from 'react-redux';
+import { removeItem } from '../../utils/CartSlice';
 
 const FoodCart = ({ imageId, name, newPrice }) => {
   return (
@@ -12,6 +14,7 @@ const FoodCart = ({ imageId, name, newPrice }) => {
         <p className='Price'>
           <strong>price</strong> : {newPrice} rupees
         </p>
+        <button>Delete Item</button>
       </div>
     </div>
   );

@@ -13,8 +13,6 @@ const Restaurant = ({
 }) => {
   cuisines.length >= 2 && cuisines.splice(3);
 
-  console.log(IMG_URL + cloudinaryImageId);
-
   // Changing ratingBackgroundColor
   let ratingBackgroundColor = useChangeRatingBck(avgRating);
 

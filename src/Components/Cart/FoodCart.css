@@ -49,3 +49,15 @@
 .Food-Cart .Price {
   margin-top: 0.35rem;
 }
+
+.Food-Cart button {
+  padding: 0.25rem 0.75rem;
+  border: none;
+  margin-top: 0.9rem;
+  background-color: rgb(136, 161, 136);
+  color: rgba(255, 255, 255, 1);
+}
+
+.Food-Cart button:hover {
+  cursor: pointer;
+}
