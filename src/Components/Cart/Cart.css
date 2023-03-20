@@ -39,3 +39,12 @@
   font-size: 0.9rem;
   margin: 1rem 0rem;
 }
+
+.Food-Cart-Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+}

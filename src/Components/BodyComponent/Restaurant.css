@@ -59,6 +59,7 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
+  transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
 }

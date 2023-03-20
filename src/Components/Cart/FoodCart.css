@@ -1,0 +1,30 @@
+.Food-Cart {
+  margin: 0.5rem;
+  position: relative;
+  max-width: 280px;
+  height: 420px;
+  position: relative;
+}
+
+.Food-Cart:hover {
+  cursor: pointer;
+}
+
+.Food-Cart-Img-Div {
+  display: inline-block;
+  margin: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Food-Cart-Img-Div img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.Food-Cart-Img-Div img:hover {
+  transform: scale(1.1);
+}
