@@ -1,13 +1,9 @@
 import { IMG_URL } from '../../utils/Config';
 import './FoodCart.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { removeItem } from '../../utils/CartSlice';
 
 const FoodCart = ({ imageId, name, newPrice }) => {
-  const cartItems = useSelector((store) => store.cart.items);
-
-  // console.log(cartItems);
-
   const dispatch = useDispatch();
 
   function modifyStore(name) {

@@ -4,7 +4,7 @@ import RestaurantsWrapper from './Components/BodyComponent/RestaurantsWrapper';
 import { useState } from 'react';
 import { FoodContext } from './utils/SearchFoodContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About from './Components/AboutComponent/About';
+import About from './Components/About/About';
 import Help from './Components/Help/Help';
 import Offers from './Components/OffersComponent/Offers';
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu';
