@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Components/HeaderComponent/Header';
-import RestaurantsWrapper from './Components/BodyComponent/RestaurantsWrapper';
+import RestaurantsWrapper from './Components/Body/RestaurantsWrapper';
 import { useState } from 'react';
 import { FoodContext } from './utils/SearchFoodContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './Components/About/About';
 import Help from './Components/Help/Help';
-import Offers from './Components/OffersComponent/Offers';
+import Offers from './Components/Offers/Offers';
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu';
 import Cart from './Components/Cart/Cart';
 
