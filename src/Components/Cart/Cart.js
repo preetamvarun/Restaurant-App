@@ -1,12 +1,16 @@
 import './Cart.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import cook from '../Cart/cooking.png';
 import { Link } from 'react-router-dom';
 import FoodCart from './FoodCart';
+import { clearCart } from '../../utils/CartSlice';
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
-
+  const disptach = useDispatch();
+  const handleClear = () => {
+    disptach(clearCart());
+  };
   return (
     <div>
       {cartItems.length === 0 ? (
@@ -21,10 +25,13 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <div className='Food-Cart-Wrapper'>
-          {cartItems.map((eachItem) => (
-            <FoodCart {...eachItem} />
-          ))}
+        <div>
+          <div className='Food-Cart-Wrapper'>
+            {cartItems.map((eachItem) => (
+              <FoodCart {...eachItem} />
+            ))}
+          </div>
+          <button onClick={handleClear}>Clear Cart</button>
         </div>
       )}
     </div>
