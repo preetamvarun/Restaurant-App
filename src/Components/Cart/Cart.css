@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .Cook-Food {
@@ -24,6 +25,7 @@
 .Empty-Cart-Text p:nth-child(2) {
   color: #686b78;
   margin: 0.2rem 0rem;
+  font-size: 0.9rem;
 }
 
 .Empty-Cart-Text a {
@@ -34,6 +36,6 @@
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin: 1rem 0rem;
 }
