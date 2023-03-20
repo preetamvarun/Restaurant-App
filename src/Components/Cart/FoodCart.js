@@ -1,9 +1,19 @@
 import { IMG_URL } from '../../utils/Config';
 import './FoodCart.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { removeItem } from '../../utils/CartSlice';
 
 const FoodCart = ({ imageId, name, newPrice }) => {
+  const cartItems = useSelector((store) => store.cart.items);
+
+  // console.log(cartItems);
+
+  const dispatch = useDispatch();
+
+  function modifyStore(name) {
+    dispatch(removeItem(name));
+  }
+
   return (
     <div className='Food-Cart'>
       <div className='Food-Cart-Img-Div'>
@@ -14,7 +24,12 @@ const FoodCart = ({ imageId, name, newPrice }) => {
         <p className='Price'>
           <strong>price</strong> : {newPrice} rupees
         </p>
-        <button>Delete Item</button>
+        <button
+          onClick={() => {
+            modifyStore(name);
+          }}>
+          Delete Item
+        </button>
       </div>
     </div>
   );

@@ -27,10 +27,7 @@ const Navigator = () => {
       {/*Cart Icon*/}
       <div className='cart-icon'>
         <Link to='/cart'>
-          <i className='fa-solid fa-cart-shopping'></i>
-          <span style={{ margin: '1rem', color: 'white' }}>
-            {cartItems.length}
-          </span>
+          <i className='fa-solid fa-cart-shopping'></i> - {cartItems.length}
         </Link>
       </div>
     </div>
