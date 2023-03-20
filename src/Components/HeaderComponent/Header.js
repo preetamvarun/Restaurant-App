@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigator from '../HeaderComponent/NavigatorComponent/Navigator';
-import Searchbar from './SearchBarComponent/Searchbar';
+import Navigator from '../HeaderComponent/Navigator/Navigator';
+import Searchbar from '../HeaderComponent/SearchBar/Searchbar';
 
 import './Header.css';
 

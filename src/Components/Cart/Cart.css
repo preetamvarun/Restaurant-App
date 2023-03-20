@@ -76,3 +76,7 @@
   color: white;
   border-radius: 2px;
 }
+
+.Food-Cart-Wrapper-Upper .Clear-Btn:hover {
+  cursor: pointer;
+}

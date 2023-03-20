@@ -58,6 +58,21 @@
   color: white;
 }
 
+.Navigator .cart-icon {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.Navigator .cart-icon span {
+  position: absolute;
+  font-size: 0.75rem;
+  background-color: #f79d53;
+  padding: 0.4rem 0.65rem;
+  transform: translateY(-40%);
+  border-radius: 50%;
+  margin: 0.1rem;
+}
+
 .Navigator .cart-icon a {
   font-size: 1.5rem;
   transition-property: color;
@@ -67,6 +82,5 @@
 }
 
 .Navigator .cart-icon a:hover {
-  color: #f79d53;
   cursor: pointer;
 }
