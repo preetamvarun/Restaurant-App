@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const Navigator = () => {
   const cartItems = useSelector((store) => store.cart.items);
-
+  const showCartNumber = cartItems.length === 0 ? 'none' : 'inline-block';
   return (
     <div className='Navigator'>
       {/*List Items in the navigator*/}
@@ -29,7 +29,9 @@ const Navigator = () => {
       <div className='cart-icon'>
         <Link to='/cart'>
           <i className='fa-solid fa-cart-shopping'></i>
-          <span>{cartItems.length}</span>
+          <span style={{ display: `${showCartNumber}` }}>
+            {cartItems.length}
+          </span>
         </Link>
       </div>
     </div>
