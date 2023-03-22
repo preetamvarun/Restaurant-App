@@ -7,7 +7,9 @@ const GetAllRestaurants = () => {
   async function getAllRestaurants() {
     const res = await fetch(API_URL);
     const resData = await res.json();
-    setAllRestaurants(resData);
+    setTimeout(() => {
+      setAllRestaurants(resData);
+    }, 5000);
   }
 
   useEffect(() => {

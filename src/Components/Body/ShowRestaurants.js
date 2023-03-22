@@ -6,6 +6,7 @@ import UseFilterFoods from '../../Hooks/UseFilterFoods';
 import { useContext } from 'react';
 import { FoodContext } from '../../utils/SearchFoodContext';
 import { Link } from 'react-router-dom';
+import Shimmer from './Shimmer';
 
 const ShowRestaurants = () => {
   const { searchFood } = useContext(FoodContext);
@@ -36,7 +37,11 @@ const ShowRestaurants = () => {
     setRequiredRestaurants(cuisines);
   };
 
-  return (
+  console.log(allRestaurants);
+
+  return !allRestaurants ? (
+    <Shimmer />
+  ) : (
     <div className='allRestaurantsWrapper'>
       <div className='Filters'>
         <h1>{requiredRestaurants?.length} restaurants</h1>
