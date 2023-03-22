@@ -6,10 +6,16 @@ import UseFilterFoods from '../../Hooks/UseFilterFoods';
 import { useContext } from 'react';
 import { FoodContext } from '../../utils/SearchFoodContext';
 import { Link } from 'react-router-dom';
-import Shimmer from './Shimmer';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../utils/OffersSlice';
+import { setRestaurantCount } from '../../utils/OffersSlice';
 
 const ShowRestaurants = () => {
   const { searchFood } = useContext(FoodContext);
+
+  const dispatch = useDispatch();
+
+  // const offerItems = useSelector((store) => store.offer.offerItems);
 
   const allRestaurants = useGetAllRestaurants()?.data?.cards?.filter(
     (eachCard) => eachCard?.cardType !== 'carousel'
@@ -37,11 +43,14 @@ const ShowRestaurants = () => {
     setRequiredRestaurants(cuisines);
   };
 
-  console.log(allRestaurants);
+  if (allRestaurants) {
+    dispatch(setRestaurantCount(allRestaurants.length));
+    allRestaurants.forEach((eachRestaurant) => {
+      dispatch(addItem(eachRestaurant.data));
+    });
+  }
 
-  return !allRestaurants ? (
-    <Shimmer />
-  ) : (
+  return (
     <div className='allRestaurantsWrapper'>
       <div className='Filters'>
         <h1>{requiredRestaurants?.length} restaurants</h1>
