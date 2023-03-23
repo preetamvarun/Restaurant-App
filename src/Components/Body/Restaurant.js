@@ -11,13 +11,9 @@ const Restaurant = ({
   aggregatedDiscountInfo,
   cloudinaryImageId,
 }) => {
-  let newCuisines = [];
+  let newCuisines = [...cuisines];
 
-  if (cuisines.length > 3) {
-    for (let i = 0; i < 3; i++) newCuisines.push(cuisines[i]);
-  } else {
-    newCuisines = [...cuisines];
-  }
+  newCuisines.length >= 3 && newCuisines.splice(2);
 
   // Changing ratingBackgroundColor
   let ratingBackgroundColor = useChangeRatingBck(avgRating);
@@ -29,7 +25,7 @@ const Restaurant = ({
       </div>
       <div>
         <p className='Restaurant-Name'>{name}</p>
-        <p className='Cuisines'>{newCuisines?.join(', ')}</p>
+        {<p className='Cuisines'>{newCuisines?.join(', ')}</p>}
       </div>
       <div className='Discount-Rating'>
         <div className='Rating-Wrapper'>
