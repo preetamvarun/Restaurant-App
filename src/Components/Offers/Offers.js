@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Restaurant from '../Body/Restaurant';
+import '../Body/RestaurantsWrapper.css';
 
 const Offers = () => {
   const offerItems = useSelector((store) => store.offer.offerItems);
@@ -8,19 +9,22 @@ const Offers = () => {
     (eachItem) => eachItem.aggregatedDiscountInfo
   );
   return (
-    <div>
-      {renderOfferItems?.map((restaurant) => (
-        <Link
-          key={restaurant?.id}
-          to={`/restaurant/${restaurant?.id}`}
-          style={{
-            display: 'inline-block',
-            textDecoration: 'none',
-            color: 'black',
-          }}>
-          <Restaurant {...restaurant} />
-        </Link>
-      ))}
+    <div className='RestaurantWrapperDiv'>
+      <h1>Discount Dining: Check out these Offers</h1>
+      <div>
+        {renderOfferItems?.map((restaurant) => (
+          <Link
+            key={restaurant?.id}
+            to={`/restaurant/${restaurant?.id}`}
+            style={{
+              display: 'inline-block',
+              textDecoration: 'none',
+              color: 'black',
+            }}>
+            <Restaurant {...restaurant} />
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
