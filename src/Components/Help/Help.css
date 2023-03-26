@@ -1,7 +1,18 @@
+.HelpWrapper {
+  max-width: 980px;
+  margin: auto;
+}
+
+.Faqs {
+  text-align: left;
+  line-height: 1.65rem;
+}
+
 .HelpWrapper > h1 {
   position: relative;
   padding: 1rem;
   font-weight: 100;
+  margin-bottom: 1.5rem;
 }
 
 .HelpWrapper > h1::after {
