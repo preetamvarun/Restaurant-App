@@ -1,0 +1,35 @@
+.Image-Div {
+  height: 200px;
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Image-Div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+.Image-Div::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.208);
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.Image-Div:hover::after {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Image-Div:hover img {
+  transform: scale(1.1);
+}
