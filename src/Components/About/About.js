@@ -43,6 +43,12 @@ const About = () => {
           ))}
         </div>
       </div>
+      {/*<div className='Testimonials'>
+        <h1>Here is what our customers say about us</h1>
+        <div className='Reviews'>
+          <p></p>
+        </div>
+      </div>*/}
     </div>
   );
 };
