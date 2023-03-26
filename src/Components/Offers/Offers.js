@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Restaurant from '../Body/Restaurant';
 import '../Body/RestaurantsWrapper.css';
-import './Offers.css';
 
 const Offers = () => {
   const offerItems = useSelector((store) => store.offer.offerItems);
@@ -12,7 +11,7 @@ const Offers = () => {
   return (
     <div className='RestaurantWrapperDiv'>
       <h1>Discount Dining: Check out these Offers</h1>
-      <div className='Restaurant'>
+      <div className='allRestaurants'>
         {renderOfferItems?.map((restaurant) => (
           <Link
             key={restaurant?.id}
