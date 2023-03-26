@@ -27,18 +27,62 @@
   flex-direction: row;
 }
 
+.Testimonials {
+  background: url('./Images/testimonials-img.jpg') center center/cover;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.Testimonials > h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.Testimonials::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.799);
+  z-index: 1;
+}
+
 .Review-Wrapper {
   margin-top: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .About-Div .Review {
-  background-color: orange;
   margin: 0.35rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: left;
-  line-height: 1.75rem;
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+.About-Div .Review .Profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.About-Div .Review .Profile img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.About-Div .Review .Profile span {
+  margin-left: 0.45rem;
+  font-size: 1rem;
 }
