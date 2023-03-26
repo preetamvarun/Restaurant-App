@@ -1,13 +1,13 @@
 import Service from './Service';
 import './About.css';
-import img1 from '../About/1.jpg';
-import img2 from '../About/2.jpg';
-import img3 from '../About/3.jpg';
-import img4 from '../About/4.jpg';
-import img5 from '../About/5.jpg';
-import img6 from '../About/6.jpg';
-import img7 from '../About/7.jpg';
-import img8 from '../About/8.jpg';
+import img1 from '../About/Images/1.jpg';
+import img2 from '../About/Images/2.jpg';
+import img3 from '../About/Images/3.jpg';
+import img4 from '../About/Images/4.jpg';
+import img5 from '../About/Images/5.jpg';
+import img6 from '../About/Images/6.jpg';
+import img7 from '../About/Images/7.jpg';
+import img8 from '../About/Images/8.jpg';
 import FoodItem from './FoodItem';
 import { services } from '../../utils/Config';
 
