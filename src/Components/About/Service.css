@@ -1,0 +1,22 @@
+.Service {
+  margin: 0.65rem;
+  color: #605d5d;
+}
+
+.Service i {
+  font-size: 3.5rem;
+  margin: 0.45rem 0rem;
+  color: orange;
+}
+
+.Service h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+  text-align: left;
+}
+
+.Service p {
+  text-align: left;
+  line-height: 1.6rem;
+}
