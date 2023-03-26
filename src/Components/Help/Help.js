@@ -1,7 +1,9 @@
+import './Help.css';
+
 const Help = () => {
   return (
-    <div>
-      <p>This is help component</p>
+    <div className='HelpWrapper'>
+      <h1>Discover Our Restaurant Help Center</h1>
     </div>
   );
 };
