@@ -89,6 +89,16 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className='Footer'>
+        <p
+          style={{
+            backgroundColor: '#333333',
+            padding: '2rem',
+            color: '#828282',
+          }}>
+          Copyright © 2023 by Savor Bites. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };

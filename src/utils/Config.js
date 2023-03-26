@@ -31,18 +31,3 @@ export const services = [
     "We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!",
   ],
 ];
-
-export const reviews = [
-  [
-    "savorbites is just awesome! I just launched a startup which leaves me with no time for cooking, so savorbites is a life-saver. Now that I got used to it, I couldn't live without my daily meals!",
-    'Alberto Duncan',
-  ],
-  [
-    'Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Mumbai, but no one comes even close to Omifood. Me and my family are so in love!',
-    'Joana Silva',
-  ],
-  [
-    'I was looking for a quick and easy food delivery service in Bombay. I tried a lot of them and ended up with savor bites. Keep up the great work!',
-    'Milton Chapman',
-  ],
-];
