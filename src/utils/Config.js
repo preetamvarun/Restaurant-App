@@ -34,33 +34,33 @@ export const services = [
 
 export const qas = [
   [
-    'How much comission will I charged by swiggy',
+    'How much comission will I charged by swiggy?',
     'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
     false,
   ],
   [
-    'How much comission will I charged by swiggy1',
-    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    'Can I edit my order?',
+    'Your order can be edited before it reaches the restaurant. You could contact customer support team via chat or call to do so. Once order is placed and restaurant starts preparing your food, you may not edit its contents',
     false,
   ],
   [
-    'How much comission will I charged by swiggy2',
-    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    'Is there a minimum order value?',
+    'We have no minimum order value and you can order for any amount.',
     false,
   ],
   [
-    'How much comission will I charged by swiggy23',
-    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    'What are your delivery hours?',
+    'Our delivery hours vary for different locations and depends on availability of supply from restaurant partners.',
     false,
   ],
   [
-    'How much comission will I charged by swiggy4',
-    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    'Do you support bulk orders?',
+    'In order to provide all customers with a great selection and to ensure on time delivery of your meal, we reserve the right to limit the quantities depending on supply.',
     false,
   ],
   [
-    'How much comission will I charged by swiggy5',
-    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    'what is swiggy money',
+    'Swiggy Money is a secure digital wallet where you can store digital currency and use it for faster check outs. It prevents payment failures and gives you seamless refunds when necessary.',
     false,
   ],
 ];

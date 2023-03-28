@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../utils/OffersSlice';
 import { setRestaurantCount } from '../../utils/OffersSlice';
+import BounceLoader from 'react-spinners/BounceLoader';
 
 const ShowRestaurants = () => {
   const { searchFood } = useContext(FoodContext);
@@ -61,21 +62,27 @@ const ShowRestaurants = () => {
           <li onClick={handleClick}>Cost : High To Low</li>
         </ul>
       </div>
-      <div className='allRestaurants'>
-        {requiredRestaurants &&
-          requiredRestaurants?.map((restaurant) => (
-            <Link
-              key={restaurant?.data?.id}
-              to={`/restaurant/${restaurant?.data?.id}`}
-              style={{
-                display: 'inline-block',
-                textDecoration: 'none',
-                color: 'black',
-              }}>
-              <Restaurant {...restaurant?.data} />
-            </Link>
-          ))}
-      </div>
+      {!allRestaurants ? (
+        <center>
+          <BounceLoader color='#3D4152' />
+        </center>
+      ) : (
+        <div className='allRestaurants'>
+          {requiredRestaurants &&
+            requiredRestaurants?.map((restaurant) => (
+              <Link
+                key={restaurant?.data?.id}
+                to={`/restaurant/${restaurant?.data?.id}`}
+                style={{
+                  display: 'inline-block',
+                  textDecoration: 'none',
+                  color: 'black',
+                }}>
+                <Restaurant {...restaurant?.data} />
+              </Link>
+            ))}
+        </div>
+      )}
     </div>
   );
 };
