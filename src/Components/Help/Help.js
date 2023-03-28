@@ -1,40 +1,10 @@
 import { useState } from 'react';
 import './Help.css';
 import Qa from './Qa';
+import { qas } from '../../utils/Config';
 
 const Help = () => {
-  const [Qas, setQas] = useState([
-    [
-      'How much comission will I charged by swiggy',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      false,
-    ],
-    [
-      'How much comission will I charged by swiggy1',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      false,
-    ],
-    [
-      'How much comission will I charged by swiggy2',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      false,
-    ],
-    [
-      'How much comission will I charged by swiggy23',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      true,
-    ],
-    [
-      'How much comission will I charged by swiggy4',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      false,
-    ],
-    [
-      'How much comission will I charged by swiggy5',
-      'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
-      false,
-    ],
-  ]);
+  const [Qas, setQas] = useState(qas);
 
   const ToggleShow = (question) => {
     let newQas = [];

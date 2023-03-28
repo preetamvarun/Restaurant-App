@@ -31,3 +31,36 @@ export const services = [
     "We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!",
   ],
 ];
+
+export const qas = [
+  [
+    'How much comission will I charged by swiggy',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+  [
+    'How much comission will I charged by swiggy1',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+  [
+    'How much comission will I charged by swiggy2',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+  [
+    'How much comission will I charged by swiggy23',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+  [
+    'How much comission will I charged by swiggy4',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+  [
+    'How much comission will I charged by swiggy5',
+    'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
+    false,
+  ],
+];
