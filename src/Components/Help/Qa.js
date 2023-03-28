@@ -5,6 +5,8 @@ const Qa = ({ question, answer, show, ToggleShow }) => {
     ToggleShow(question);
   };
 
+  let cls = show ? 'show' : 'hide';
+
   return (
     <div className='QA'>
       <div className='question'>
@@ -15,7 +17,9 @@ const Qa = ({ question, answer, show, ToggleShow }) => {
           <i className='fa-solid fa-caret-up' onClick={handleClick}></i>
         )}
       </div>
-      <p style={{ display: `${show ? 'block' : 'none'}` }}>{answer}</p>
+      <div className='ans'>
+        <p className={cls}>{answer}</p>
+      </div>
     </div>
   );
 };
