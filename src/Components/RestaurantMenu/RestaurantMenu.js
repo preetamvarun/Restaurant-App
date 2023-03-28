@@ -4,6 +4,7 @@ import useRestaurantMenu from '../../Hooks/useRestaurantMenu';
 import './RestaurantMenu.css';
 import RecommedRestaurant from './RecommendRestaurant';
 import { v4 as uuidv4 } from 'uuid';
+import BounceLoader from 'react-spinners/BounceLoader';
 
 const RestaurantMenu = () => {
   const { id } = useParams();
@@ -25,7 +26,13 @@ const RestaurantMenu = () => {
       .flat(1)
       .map((a) => a?.card?.info);
 
-  return (
+  return !restaurantMenu ? (
+    <div style={{ marginTop: '2rem' }}>
+      <center>
+        <BounceLoader color='#3D4152' />
+      </center>
+    </div>
+  ) : (
     <div className='Main-Menu'>
       <div className='Intro-Div'>
         <div className='First-Intro'>
