@@ -1,14 +1,18 @@
 import './Qa.css';
 
-const Qa = ({ question, answer, show }) => {
+const Qa = ({ question, answer, show, ToggleShow }) => {
+  const handleClick = () => {
+    ToggleShow(question);
+  };
+
   return (
     <div className='QA'>
       <div className='question'>
         <p>{question}</p>
         {show ? (
-          <i class='fa-solid fa-caret-down'></i>
+          <i className='fa-solid fa-caret-down' onClick={handleClick}></i>
         ) : (
-          <i class='fa-solid fa-caret-up'></i>
+          <i className='fa-solid fa-caret-up' onClick={handleClick}></i>
         )}
       </div>
       <p style={{ display: `${show ? 'block' : 'none'}` }}>{answer}</p>
