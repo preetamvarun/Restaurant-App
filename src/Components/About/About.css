@@ -86,3 +86,16 @@
   margin-left: 0.45rem;
   font-size: 1rem;
 }
+
+@media (max-width: 700px) {
+  .Services {
+    display: flex;
+    flex-direction: column;
+  }
+  .Review-Wrapper {
+    flex-direction: column;
+  }
+  .Review {
+    margin: 0.4rem 0rem;
+  }
+}
