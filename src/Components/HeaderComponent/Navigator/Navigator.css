@@ -84,3 +84,23 @@
 .Navigator .cart-icon a:hover {
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .Navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Nav-Links ul li {
+    padding: 0.25rem 0.3rem;
+  }
+
+  .cart-icon {
+    margin-left: 0.15rem;
+  }
+
+  .cart-icon i {
+    font-size: 1.25rem;
+  }
+}

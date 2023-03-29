@@ -54,3 +54,12 @@
 .inputDiv input:focus {
   outline: none;
 }
+
+@media (max-width: 280px) {
+  .CravingsDiv .inputDiv {
+    width: 170px;
+  }
+  .CravingsDiv {
+    margin-left: 1rem;
+  }
+}
