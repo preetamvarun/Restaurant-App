@@ -5,7 +5,11 @@ const GetAllRestaurants = () => {
   const [allRestaurants, setAllRestaurants] = useState('');
 
   async function getAllRestaurants() {
-    const res = await fetch(API_URL);
+    const res = await fetch(API_URL,{
+   headers: {
+     "Access-Control-Allow-Origin": '*'
+   }
+  });
     const resData = await res.json();
     setAllRestaurants(resData);
   }
