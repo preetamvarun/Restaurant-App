@@ -64,3 +64,16 @@
 .RecommendRestaurantDiv .Image-Div-Wrapper .Add-Link:hover {
   cursor: pointer;
 }
+
+@media (max-width: 520px) {
+  .RecommendRestaurantDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .RecommendRestaurantDiv .Text-Div {
+    width: 100%;
+    line-height: 1.5rem;
+    margin-bottom: 0.85rem;
+  }
+}

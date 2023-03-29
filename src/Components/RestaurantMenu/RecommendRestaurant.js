@@ -16,7 +16,7 @@ const RecommedRestaurant = ({ name, price, description, imageId }) => {
   };
 
   return (
-    <div>
+    <>
       <div className='RecommendRestaurantDiv'>
         <div className='Text-Div'>
           <p>{name}</p>
@@ -45,7 +45,7 @@ const RecommedRestaurant = ({ name, price, description, imageId }) => {
         </div>
       </div>
       <hr />
-    </div>
+    </>
   );
 };
 

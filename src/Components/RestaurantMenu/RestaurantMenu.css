@@ -46,3 +46,16 @@
 .Second-Intro > div p {
   display: inline-block;
 }
+
+@media (max-width: 530px) {
+  .Intro-Div {
+    display: flex;
+    flex-direction: column;
+  }
+  .First-Intro {
+    width: 100%;
+    margin: 0.75rem 0rem;
+    padding: 0.2rem;
+    line-height: 2rem;
+  }
+}
