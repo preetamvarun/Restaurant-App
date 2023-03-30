@@ -9,6 +9,7 @@ import Help from './Components/Help/Help';
 import Offers from './Components/Offers/Offers';
 import RestaurantMenu from './Components/RestaurantMenu/RestaurantMenu';
 import Cart from './Components/Cart/Cart';
+import NotFound from './Components/NotFound';
 
 function App() {
   const [searchFood, setSearchFood] = useState('');
@@ -29,6 +30,7 @@ function App() {
             <Route path='/offers' Component={Offers} />
             <Route path='/restaurant/:id' Component={RestaurantMenu} />
             <Route path='/cart' Component={Cart} />
+            <Route path='*' Component={NotFound} />
           </Routes>
         </FoodContext.Provider>
       </div>
