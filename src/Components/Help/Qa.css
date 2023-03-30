@@ -10,7 +10,7 @@
 
 .Answer-Div {
   overflow: hidden;
-  height: 90px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 .show {
-  height: 90px;
+  height: 120px;
 }
 
 .hide {
