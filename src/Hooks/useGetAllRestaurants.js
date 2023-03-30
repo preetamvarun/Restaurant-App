@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { API_URL } from '../utils/Config';
-import { CORS_PROXY } from '../utils/Config';
 
 const GetAllRestaurants = () => {
   const [allRestaurants, setAllRestaurants] = useState('');
