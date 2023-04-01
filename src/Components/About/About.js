@@ -38,8 +38,8 @@ const About = () => {
       </div>
       <div className='Food-Images'>
         <div className='Food-Images-1'>
-          {images1.map((eachImage) => (
-            <FoodItem img={eachImage} key={eachImage} />
+          {images1.map((eachImage, index) => (
+            <FoodItem img={eachImage} key={eachImage} idx={index} />
           ))}
         </div>
         <div className='Food-Images-2'>
