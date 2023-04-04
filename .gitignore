@@ -24,3 +24,5 @@ yarn-error.log*
 
 
 README.MD
+# Local Netlify folder
+.netlify
