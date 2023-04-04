@@ -1,10 +1,10 @@
 export const API_URL =
-  'https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING';
+  'https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&page_type=DESKTOP_WEB_LISTING';
 export const IMG_URL =
   'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/';
 
 export const FETCH_MENU_URL =
-  'https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.1271225&lng=78.6568942&restaurantId=';
+  'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.1271225&lng=78.6568942&restaurantId=';
 
 export const services = [
   [
@@ -34,7 +34,7 @@ export const services = [
 
 export const qas = [
   [
-    'How much comission will I charged by swiggy?',
+    'How much comission will I charged by savorBites?',
     'The commission charges vary for different cities. You will be able to see the commission applicable for you once the preliminary onboarding details have been filled.',
     false,
   ],
@@ -59,8 +59,8 @@ export const qas = [
     false,
   ],
   [
-    'what is swiggy money',
-    'Swiggy Money is a secure digital wallet where you can store digital currency and use it for faster check outs. It prevents payment failures and gives you seamless refunds when necessary.',
+    'what is savorBites money',
+    'savorBites Money is a secure digital wallet where you can store digital currency and use it for faster check outs. It prevents payment failures and gives you seamless refunds when necessary.',
     false,
   ],
 ];

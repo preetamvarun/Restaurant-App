@@ -1,7 +1,8 @@
 .QA {
   margin: 0.25rem;
   padding: 0.45rem;
-  background-color: rgba(212, 204, 204, 0.79);
+  background-color: white;
+  box-shadow: 0 10px 12px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .QA p {
@@ -18,11 +19,11 @@
 
 .ans p {
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.75);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 0.35rem;
+  color: rgb(110, 107, 107);
 }
 
 .show {
