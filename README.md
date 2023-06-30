@@ -29,7 +29,7 @@ The purpose of this project is to understand and implement the react concepts th
 
 <a name = "preview"> </a>
 ## 3. Preview 🎥
-preview will be added shortly
+<a href = "https://drive.google.com/drive/folders/1_HOS_7Q5ocA2hCCGnewKKWjCvysxTKdJ">Preview</a>
 
 <a name = "Installation"> </a>
 ## 4. Installation ❤️‍🔥
