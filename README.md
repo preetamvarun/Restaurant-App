@@ -11,7 +11,6 @@ A Food Delivery app that is built with **HTML5, CSS3, React and Redux**
 - [Installation](#Installation)
 - [Technologies](#Tech)
 - [Features](#Features)
-- [liveDemo](#liveDemo)
 
 <a name = "GeneralInfo"> </a>
 ## 1. General Info 📝
@@ -80,6 +79,3 @@ Centralized Data Store Using Redux 💾 <br>
 Search Functionality 🔍 <br>
 Filter Functionality ⌛ <br>
 Cart Functionality 🛒
-
-<a name = "liveDemo"> </a>
-## live demo 🎥
