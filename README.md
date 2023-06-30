@@ -19,16 +19,14 @@ The purpose of this project is to understand and implement the react concepts th
 
 <a name = "screenshots"> </a>
 ## 2. Screenshots 📸
-<img src = "restaurantapp/screenshot (100).png" alt = "demo-img" width = "500">
-<img src = "images/a-2.png" alt = "calciImage" width = "500">
-<img src = "images/a-3.png" alt = "calciImage" width = "500">
-<img src = "images/a-4.png" alt = "calciImage" width = "500">
-<img src = "images/a-7.png" alt = "calciImage" width = "500">
-<img src = "images/a-8.png" alt = "calciImage" width = "500">
-<img src = "images/a-9.png" alt = "calciImage" width = "500">
-<img src = "images/a-10.png" alt = "calciImage" width = "500">
-<img src = "images/a-11.png" alt = "calciImage" width = "500">
-<img src = "images/a-12.png" alt = "calciImage" width = "500">
+<img src = "demo-images/img-1.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-2.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-3.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-4.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-5.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-6.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-7.png" alt = "demo-img" width = "500">
+<img src = "demo-images/img-8.png" alt = "demo-img" width = "500">
 
 <a name = "preview"> </a>
 ## 3. Preview 🎥
