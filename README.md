@@ -80,7 +80,8 @@ Shimmer UI 🔃 <br>
 Real Time Data Fetching From Api 🌐 <br>
 Centralized Data Store Using Redux 💾 <br>
 Search Functionality 🔍 <br>
-Filter Functionality ⌛
+Filter Functionality ⌛ <br>
+Cart Functionality 🛒
 
 <a name = "liveDemo"> </a>
 ## live demo 🎥
