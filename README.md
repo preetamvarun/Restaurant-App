@@ -19,7 +19,7 @@ The purpose of this project is to understand and implement the react concepts th
 
 <a name = "screenshots"> </a>
 ## 2. Screenshots 📸
-<img src = "images/a-1.png" alt = "calciImage" width = "500">
+<img src = "restaurantapp/screenshot (100).png" alt = "demo-img" width = "500">
 <img src = "images/a-2.png" alt = "calciImage" width = "500">
 <img src = "images/a-3.png" alt = "calciImage" width = "500">
 <img src = "images/a-4.png" alt = "calciImage" width = "500">
