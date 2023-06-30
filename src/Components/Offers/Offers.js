@@ -8,6 +8,10 @@ const Offers = () => {
   const renderOfferItems = offerItems.filter(
     (eachItem) => eachItem.aggregatedDiscountInfo
   );
+  
+  if (renderOfferItems.length === 0)
+    return <h1 style={{ marginTop: '10px' }}>No offers at the moment🥲</h1>;
+
   return (
     <div className='RestaurantWrapperDiv'>
       <h1>Discount Dining: Check out these Offers</h1>
